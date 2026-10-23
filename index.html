@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anav Shah | Engineering & Developer Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Google Model Viewer for 3D Blender Embeds -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">AS<span>.</span></a>
+      <button class="menu-toggle" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="btn-nav">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero container">
+      <div class="hero-content reveal">
+        <div class="hero-text">
+          <p class="mono-accent"><i class="fa-solid fa-terminal"></i> Hello, world! I am</p>
+          <h1 class="hero-title">Anav Shah.</h1>
+          <h2 class="hero-subtitle">Building intelligent systems, scalable backends & hardware prototypes.</h2>
+          <p class="hero-description">
+            An engineering student and developer working across <strong>Machine Learning</strong>, 
+            <strong>Full-Stack Web APIs</strong>, <strong>Embedded Robotics</strong>, and <strong>3D Digital Art</strong>.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">Explore My Work <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+        
+        <!-- Interactive 3D Model Embed -->
+        <div class="hero-3d">
+          <model-viewer 
+            src="model.glb" 
+            alt="Anav's 3D Blender Model" 
+            auto-rotate 
+            camera-controls 
+            shadow-intensity="1"
+            disable-zoom
+            environment-image="neutral">
+          </model-viewer>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section container">
+      <div class="section-header reveal">
+        <span class="mono-accent">01.</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="header-line"></div>
+      </div>
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p>
+            I love working at the intersection of software intelligence and physical systems. Whether I'm training deep learning models for computer vision, architecting RESTful backends, or simulating PCB layouts and microcontrollers, I focus on building clean, reliable, and impactful solutions.
+          </p>
+          <p>
+            Beyond code and circuits, I enjoy exploring 3D modeling, procedural materials, and Python scripting (`bpy`) in Blender to bring creative digital assets to life.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <i class="fa-solid fa-brain stat-icon"></i>
+            <h3>AI & ML</h3>
+            <p>Computer Vision & Predictive Modeling</p>
+          </div>
+          <div class="stat-card">
+            <i class="fa-solid fa-server stat-icon"></i>
+            <h3>Backend</h3>
+            <p>Node.js, Express & PostgreSQL APIs</p>
+          </div>
+          <div class="stat-card">
+            <i class="fa-solid fa-microchip stat-icon"></i>
+            <h3>Hardware</h3>
+            <p>ESP32 Robotics & Circuit Design</p>
+          </div>
+          <div class="stat-card">
+            <i class="fa-solid fa-cubes stat-icon"></i>
+            <h3>3D Design</h3>
+            <p>Blender Assets & Python Scripting</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section container">
+      <div class="section-header reveal">
+        <span class="mono-accent">02.</span>
+        <h2 class="section-title">Technical Arsenal</h2>
+        <div class="header-line"></div>
+      </div>
+      <div class="skills-grid reveal">
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-code"></i> Languages & Core</h3>
+          <div class="skill-tags">
+            <span>Python 3.11</span><span>C / C++</span><span>JavaScript</span><span>SQL</span><span>HTML/CSS</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-network-wired"></i> ML & Data</h3>
+          <div class="skill-tags">
+            <span>PyTorch</span><span>LightGBM</span><span>Optuna</span><span>OpenCV</span><span>Colab</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-database"></i> Web & Backend</h3>
+          <div class="skill-tags">
+            <span>Node.js</span><span>Express.js</span><span>PostgreSQL</span><span>REST APIs</span><span>Git</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-screwdriver-wrench"></i> Hardware & Creative</h3>
+          <div class="skill-tags">
+            <span>ESP32</span><span>Proteus</span><span>Blender (bpy)</span><span>Eclipse CDT</span><span>Canva</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section container">
+      <div class="section-header reveal">
+        <span class="mono-accent">03.</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="header-line"></div>
+      </div>
+
+      <!-- Interactive Project Filter -->
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ml">ML / AI</button>
+        <button class="filter-btn" data-filter="backend">Backend / Web</button>
+        <button class="filter-btn" data-filter="hardware">Hardware / 3D</button>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- Project 1 (ML) -->
+        <article class="project-card reveal" data-category="ml">
+          <div class="project-top">
+            <i class="fa-regular fa-folder-open folder-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/anavshah2008/langchain-gemini-rag" target="_blank" aria-label="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">langchain-gemini-rag</h3>
+          <p class="project-desc">
+            PDF Question-Answering RAG Pipeline. A Retrieval-Augmented Generation (RAG) system built with LangChain, ChromaDB, and Google Gemini.
+          </p>
+          <ul class="project-tech">
+            <li>Jupyter Notebook</li><li>LangChain</li><li>Gemini AI</li>
+          </ul>
+        </article>
+
+        <!-- Project 2 (ML) -->
+        <article class="project-card reveal" data-category="ml">
+          <div class="project-top">
+            <i class="fa-regular fa-folder-open folder-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/anavshah2008/mnist-cnn-pytorch" target="_blank" aria-label="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">mnist-cnn-pytorch</h3>
+          <p class="project-desc">
+            A lightweight, robust PyTorch implementation of a Convolutional Neural Network (CNN) trained and evaluated on the classic MNIST dataset, achieving an impressive test accuracy of over 99.2%.
+          </p>
+          <ul class="project-tech">
+            <li>Jupyter Notebook</li><li>PyTorch</li><li>CNN</li>
+          </ul>
+        </article>
+
+        <!-- Project 3 (Backend) -->
+        <article class="project-card reveal" data-category="backend">
+          <div class="project-top">
+            <i class="fa-regular fa-folder-open folder-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/anavshah2008/College-live-event-board" target="_blank" aria-label="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">College-live-event-board</h3>
+          <p class="project-desc">
+            Live campus event board updated by phone calls — utilizing an AI voice agent combined with Google Apps Script.
+          </p>
+          <ul class="project-tech">
+            <li>JavaScript</li><li>AI Voice Agent</li><li>Apps Script</li>
+          </ul>
+        </article>
+
+        <!-- Project 4 (Backend) -->
+        <article class="project-card reveal" data-category="backend">
+          <div class="project-top">
+            <i class="fa-regular fa-folder-open folder-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/anavshah2008/phonemail_NITT_alphastack" target="_blank" aria-label="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">phonemail_NITT_alphastack</h3>
+          <p class="project-desc">
+            PhoneMail is an email platform where a user's phone number acts as their email identity (e.g., 9876543210@phonemail.com). The goal is to make email communication easier for users.
+          </p>
+          <ul class="project-tech">
+            <li>JavaScript</li><li>Node.js</li><li>APIs</li>
+          </ul>
+        </article>
+
+        <!-- Project 5 (Hardware) -->
+        <article class="project-card reveal" data-category="hardware">
+          <div class="project-top">
+            <i class="fa-regular fa-folder-open folder-icon"></i>
+            <div class="project-links">
+              <a href="viewer3d.html" target="_blank" aria-label="3D Viewer"><i class="fa-solid fa-cube"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">N.I.R.M.A.L. 3D Module</h3>
+          <p class="project-desc">
+            An interactive structural breakdown and rendering viewer for the N.I.R.M.A.L. robot chassis, electronics, and wiring pathways.
+          </p>
+          <ul class="project-tech">
+            <li>viewer3d.html</li><li>Canvas 3D</li><li>Hardware</li>
+          </ul>
+        </article>
+
+        <!-- Project 6 (Backend) -->
+        <article class="project-card reveal" data-category="backend">
+          <div class="project-top">
+            <i class="fa-regular fa-folder-open folder-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/anavshah2008/student-management-system" target="_blank" aria-label="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">student-management-system</h3>
+          <p class="project-desc">
+            A CLI-based Student Management System developed in Python and MySQL[cite: 4].
+          </p>
+          <ul class="project-tech">
+            <li>Python</li><li>MySQL</li><li>CLI</li>
+          </ul>
+        </article>
+
+        <!-- Project 7 (ML) -->
+        <article class="project-card reveal" data-category="ml">
+          <div class="project-top">
+            <i class="fa-regular fa-folder-open folder-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/anavshah2008/mcp-chat" target="_blank" aria-label="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">mcp-chat</h3>
+          <p class="project-desc">
+            Model Context Protocol[cite: 4].
+          </p>
+          <ul class="project-tech">
+            <li>Python</li><li>MCP</li><li>LLM</li>
+          </ul>
+        </article>
+
+        <!-- Project 8 (Backend) -->
+        <article class="project-card reveal" data-category="backend">
+          <div class="project-top">
+            <i class="fa-regular fa-folder-open folder-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/anavshah2008/testrepo" target="_blank" aria-label="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">testrepo</h3>
+          <p class="project-desc">
+            Python testing repository[cite: 4].
+          </p>
+          <ul class="project-tech">
+            <li>Python</li>
+          </ul>
+        </article>
+
+        <!-- Project 9 (Backend) -->
+        <article class="project-card reveal" data-category="backend">
+          <div class="project-top">
+            <i class="fa-regular fa-folder-open folder-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/anavshah2008/gxuyw-Introduction-to-Open-Source" target="_blank" aria-label="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">gxuyw-Introduction-to-Open-Source</h3>
+          <p class="project-desc">
+            Introduction to Open Source[cite: 4]. Forked repository exploring open source methodologies.
+          </p>
+          <ul class="project-tech">
+            <li>Open Source</li><li>Git</li>
+          </ul>
+        </article>
+
+        <!-- Project 10 (Backend) -->
+        <article class="project-card reveal" data-category="backend">
+          <div class="project-top">
+            <i class="fa-regular fa-folder-open folder-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/anavshah2008/COMPUTER-SCIENCE-ANAV-SHAH-HHW-WEBSITE" target="_blank" aria-label="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">COMPUTER-SCIENCE-ANAV-SHAH-HHW-WEBSITE</h3>
+          <p class="project-desc">
+            Computer Science HHW Website project built with HTML[cite: 4].
+          </p>
+          <ul class="project-tech">
+            <li>HTML</li><li>CSS</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section container reveal">
+      <div class="section-header">
+        <span class="mono-accent">04.</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="header-line"></div>
+      </div>
+      
+      <div class="contact-wrapper">
+        <div class="contact-left">
+          <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Let's Connect</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+            Whether you want to collaborate on a machine learning research project, discuss backend architecture, or just say hi, my inbox is always open.
+          </p>
+          <div class="contact-info">
+            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:anavshah2008@gmail.com">anavshah2008@gmail.com</a></p>
+            <p><i class="fa-solid fa-phone"></i> <a href="tel:+917011015488">+91 7011015488</a></p>
+          </div>
+          
+          <div class="social-links" style="justify-content: flex-start; margin-top: 2rem;">
+            <a href="https://github.com/anavshah2008" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/anav-shah-378ba1278/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://x.com/anavshah2008" target="_blank" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://instagram.com/anavshah2008" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <!-- Formspree Integration -->
+          <form action="https://formspree.io/f/xqppkojr" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Designed & Built by <strong>Anav Shah</strong></p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      const icon = menuToggle.querySelector('i');
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-xmark');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        const icon = menuToggle.querySelector('i');
+        icon.classList.add('fa-bars');
+        icon.classList.remove('fa-xmark');
+      });
+    });
+
+    // Interactive Project Filtering
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        const filter = btn.getAttribute('data-filter');
+        
+        projectCards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Scroll Reveal Observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
